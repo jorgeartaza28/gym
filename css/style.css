@@ -1,0 +1,1063 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*My Code*/
+/*DeskTop*/
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: rgba(100, 70, 80, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.index-header {
+  max-width: 100%;
+  min-height: 100px;
+  background-color: rgb(90, 40, 200);
+}
+
+.index-header .logo-link {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.index-header .logo-link .logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.header .index-nav {
+  max-width: 100%;
+  min-height: 100px;
+  background-color: rgb(90, 40, 200);
+}
+
+.index-nav .index-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.index-nav .index-ul .index-li {
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+
+.index-nav .index-ul .index-li .index-a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.pic-banner {
+  width: 100%;
+}
+
+.pic-banner .banner {
+  width: 100%;
+}
+
+.package {
+  margin-top: 40px;
+  max-width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(90, 40, 200);
+  margin-bottom: 200px;
+}
+
+.package .rookie {
+  max-width: 200px;
+  background-color: rgb(90, 40, 200);
+}
+
+.rookie .img-rokkie {
+  width: 200px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rookie .price {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.package .intermideate {
+  max-width: 200px;
+  background-color: rgb(90, 40, 200);
+}
+
+.package .intermideate .img-intermideate {
+  width: 200px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intermideate .price {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.package .all-star {
+  max-width: 200px;
+  background-color: rgb(90, 40, 200);
+}
+
+.all-star .star {
+  width: 290px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.all-star .price {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.class {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+  background-color: rgb(90, 40, 200);
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+.class .spinning {
+  max-width: 400px;
+  min-height: 500px;
+  margin-top: 100px;
+}
+.class .workout {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.spinning .workout-class {
+  width: 400px;
+  height: 400px;
+}
+
+.spinning .spinning {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.class .yoga {
+  max-width: 400px;
+  min-height: 500px;
+  margin-top: 100px;
+}
+
+.yoga .workout-class {
+  width: 400px;
+  height: 400px;
+}
+
+.yoga .youga {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.class .abs {
+  max-width: 400px;
+  min-height: 500px;
+  margin-top: 100px;
+}
+
+.abs .workout-class {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+}
+
+.abs .abs {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.video {
+  width: 1060px; /* you have to have a size or this method doesn't work */
+  height: 815px;
+  margin-bottom: 100px;
+}
+
+iframe {
+  width: 1000px;
+  height: 500px;
+  position: absolute; /* positions out of the flow, but according to the nearest parent */
+  top: 0;
+  right: 0; /* confuse it i guess */
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-top: 400px;
+}
+
+.index-form {
+  max-width: 1000px;
+  min-height: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(80, 80, 120);
+}
+
+.index-form .signup {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.index-form .log-in {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.index-form .name {
+  max-width: 500px;
+  display: flex;
+
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.index-form .e-mail {
+  max-width: 500px;
+  display: flex;
+
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.index-form .pwd {
+  max-width: 500px;
+  display: flex;
+
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.finish .submit {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.index-footer {
+  max-width: 100%;
+  margin-top: auto;
+  background-color: rgb(90, 40, 200);
+}
+
+.index-footer .sm {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  html {
+    background-color: rgba(100, 70, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .index-header {
+    max-width: 100%;
+    min-height: 100px;
+    background-color: rgb(90, 40, 200);
+  }
+
+  .index-header .logo-link {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+  .index-header .logo-link .logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+  .header .index-nav {
+    max-width: 100%;
+    min-height: 100px;
+    background-color: rgb(90, 40, 200);
+  }
+
+  .index-nav .index-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .index-nav .index-ul .index-li {
+    margin-bottom: 50px;
+    padding-left: 20px;
+  }
+
+  .index-nav .index-ul .index-li .index-a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .pic-banner {
+    width: 100%;
+  }
+
+  .pic-banner .banner {
+    width: 100%;
+  }
+
+  .package {
+    max-width: 90%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(90, 40, 200);
+    margin-bottom: 200px;
+    margin: 0 auto;
+  }
+
+  .package .rookie {
+    max-width: 200px;
+    background-color: rgb(90, 40, 200);
+    margin: 0 auto;
+  }
+
+  .rookie .img-rokkie {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rookie .price {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .package .intermideate {
+    max-width: 200px;
+    background-color: rgb(90, 40, 200);
+    margin: 0 auto;
+  }
+
+  .package .intermideate .img-intermideate {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intermideate .price {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .package .all-star {
+    max-width: 200px;
+    background-color: rgb(90, 40, 200);
+    margin: 0 auto;
+  }
+
+  .all-star .star {
+    width: 290px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .all-star .price {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .class {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    max-width: 90%;
+    background-color: rgb(90, 40, 200);
+    margin: 0 auto;
+    margin-bottom: 200px;
+    margin-top: 10%;
+  }
+
+  .class .spinning {
+    max-width: 400px;
+    min-height: 500px;
+    margin-top: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .class .workout {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .spinning .workout-class {
+    width: 400px;
+    height: 400px;
+  }
+
+  .spinning .spinning {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .class .yoga {
+    max-width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+  }
+
+  .yoga .workout-class {
+    width: 400px;
+    height: 400px;
+  }
+
+  .yoga .youga {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 100px;
+  }
+
+  .class .abs {
+    max-width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .abs .workout-class {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+  }
+
+  .abs .abs {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 100px;
+  }
+
+  .video {
+    width: 1060px; /* you have to have a size or this method doesn't work */
+    height: 815px;
+    margin-bottom: 100px;
+  }
+
+  iframe {
+    width: 1000px;
+    height: 500px;
+    position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 0;
+    right: 0; /* confuse it i guess */
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 400px;
+  }
+
+  .index-form {
+    max-width: 1000px;
+    min-height: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(80, 80, 120);
+  }
+
+  .index-form .signup {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .index-form .log-in {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .index-form .name {
+    max-width: 500px;
+    display: flex;
+
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .name .input-first {
+    margin-bottom: 20px;
+  }
+
+  .index-form .e-mail {
+    max-width: 500px;
+    display: flex;
+
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .index-form .pwd {
+    max-width: 500px;
+    display: flex;
+
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .finish .submit {
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+  .index-footer {
+    max-width: 100%;
+    margin-top: auto;
+    background-color: rgb(90, 40, 200);
+  }
+
+  .index-footer .sm {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  html {
+    background-color: rgba(100, 70, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .index-header {
+    max-width: 100%;
+    min-height: 100px;
+    background-color: rgb(90, 40, 200);
+  }
+
+  .index-header .logo-link {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+  .index-header .logo-link .logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+  .header .index-nav {
+    max-width: 100%;
+    min-height: 100px;
+    background-color: rgb(90, 40, 200);
+  }
+
+  .index-nav .index-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .index-nav .index-ul .index-li {
+    margin-bottom: 50px;
+    padding-left: 20px;
+  }
+
+  .index-nav .index-ul .index-li .index-a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .pic-banner {
+    width: 100%;
+  }
+
+  .pic-banner .banner {
+    width: 100%;
+  }
+
+  .package {
+    max-width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(90, 40, 200);
+    margin-bottom: 200px;
+    margin: 0 auto;
+  }
+
+  .package .rookie {
+    max-width: 200px;
+    background-color: rgb(90, 40, 200);
+    margin: 0 auto;
+  }
+
+  .rookie .img-rokkie {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rookie .price {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .package .intermideate {
+    max-width: 200px;
+    background-color: rgb(90, 40, 200);
+    margin: 0 auto;
+  }
+
+  .package .intermideate .img-intermideate {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intermideate .price {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .package .all-star {
+    max-width: 200px;
+    background-color: rgb(90, 40, 200);
+    margin: 0 auto;
+  }
+
+  .all-star .star {
+    width: 290px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .all-star .price {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .class {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    background-color: rgb(90, 40, 200);
+    margin: 0 auto;
+    margin-bottom: 200px;
+    margin-top: 10%;
+  }
+
+  .class .spinning {
+    max-width: 400px;
+    min-height: 500px;
+    margin-top: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .class .workout {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .spinning .workout-class {
+    width: 300px;
+    height: 300px;
+  }
+
+  .spinning .spinning {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .class .yoga {
+    max-width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+  }
+
+  .yoga .workout-class {
+    width: 300px;
+    height: 300px;
+  }
+
+  .yoga .youga {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 100px;
+  }
+
+  .class .abs {
+    max-width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .abs .workout-class {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+  }
+
+  .abs .abs {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 100px;
+  }
+
+  .video {
+    width: 300px; /* you have to have a size or this method doesn't work */
+    height: 300px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 300px;
+    position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 0;
+    right: 0; /* confuse it i guess */
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  .index-form {
+    max-width: 1000px;
+    min-height: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(80, 80, 120);
+  }
+
+  .index-form .signup {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .index-form .log-in {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .index-form .name {
+    max-width: 500px;
+    display: flex;
+
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .name .input-first {
+    margin-bottom: 20px;
+  }
+
+  .index-form .e-mail {
+    max-width: 500px;
+    display: flex;
+
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .index-form .pwd {
+    max-width: 500px;
+    display: flex;
+
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .finish .submit {
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+  .index-footer {
+    max-width: 100%;
+    margin-top: auto;
+    background-color: rgb(90, 40, 200);
+  }
+
+  .index-footer .sm {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+}
